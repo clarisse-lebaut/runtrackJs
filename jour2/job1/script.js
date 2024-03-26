@@ -1,4 +1,6 @@
 
+/* --- CREATION D'UN PREMIER EVENEMENT --- */
+
 //création d'une fonction qui récupère la citation
 function citation(){
     const element = document.getElementById("citation"); //récup l'emplacement de la citation
