@@ -1,4 +1,4 @@
-/* ---> AFFICHIER / MASQUER DES ELEMENTS AJOUTE VIA JQUERY
+/* ---> AFFICHIER / MASQUER DES ELEMENTS AJOUTE VIA JQUERY --
 
 // création et ajout du nouveau paragraphe dans le corps de la page web
 /* on instancie la nouvelle phrase */
