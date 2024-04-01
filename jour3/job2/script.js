@@ -1,88 +1,92 @@
-// trouver la fonction pour mélanger les images
-    // math random ?
+// fonction pour mélanger les cartes
+$(document).ready(function (){
+        $("#mix_cards").click(function (){
 
-// les affilier au bouton "mélanger"
-    
-    //(document).ready(function() {
-    //$('#changeImage').click(function() {
+    let originalIamgesSources = [
+        "../job2/images/arc1.png",
+        "../job2/images/arc2.png",
+        "../job2/images/arc3.png",
+        "../job2/images/arc4.png",
+        "../job2/images/arc5.png",
+        "../job2/images/arc6.png",
+    ];
 
-// pouvoir selectionner les images avec drag and drop
+    let shuffledArrayImagessources = shuffleArray(originalIamgesSources.slice());
 
-    //récupérer la librairie JQuerry UI
+    function shuffleArray(array){
+        for (var i = array.length - 1; i > 0; i--){
+            var j = Math.floor(Math.random() * (i+1));
+            var temp = array [i];
+            array[i] = array [j];
+            array[j] = temp;
+        }
 
-// IL FAUT 2 CONTENEURS 
-// --- une pour pouvoir mettre les images <div id=contenaire2>
-// --- une dans laquelle on récupère les images pour les placer dans le contenaire supérieur <div id=contenaire1>
+        return array;
+    }
 
-// conditions de réussites
-// -- faux = Vous avez perdu
-// les deux doivent prendre les bons emplacements dans le contenaire 1, si toutes les images sont à la bonne place, alors on est bon
-// -- vrai = Vous avez gagné
-
-
-
-// trouver la fonction pour mélanger les images
-    // math random
-// les affilier au bouton "mélanger"
-
-// pouvoir selectionner les images avec drag and drop
-
-// IL FAUT 2 CONTENEURS 
-// --- une pour pouvoir mettre les images
-// --- une dans laquelle on récupère les images pour les placer dans le contenaire supérieur
-
-// conditions de réussites
-// -- faux = Vous avez perdu
-// -- vrai = Vous avez gagné
-
-// ------------------------------------------------------------------------------------------
-// ------------------------------------------------------------------------------------------
-
-/* ------------ changer une image en cliquant dessus !!!!
-$('#arc1').on({
-'click': function() {
-var src = ($(this).attr('src') === '../job2/images/arc1.png')
-? '../job2/images/arc2.png'
-: '../job2/images/arc1.png';
-$(this).attr('src', src);
-}
+    $("#contenaire2 img").each(function(index){
+        $(this).attr('src', shuffledArrayImagessources[index])
+    });
 });
-*/
-
-/*
-$('button').click(function() {
-	shuffleElements( $('li') );
 });
 
-function shuffleElements($elements) {
-	var i, index1, index2, temp_val;
 
-	var count = $elements.length;
-	var $parent = $elements.parent();
-	var shuffled_array = [];
+// variable pour définir l'ordre des cartes
+let order = [
+	{src: "../job2/images/arc1.png", order: 1},
+	{src: "../job2/images/arc2.png", order: 2},
+	{src: "../job2/images/arc3.png", order: 3},
+	{src: "../job2/images/arc4.png", order: 4},
+	{src: "../job2/images/arc5.png", order: 5},
+ 	{src: "../job2/images/arc6.png", order: 6},
+];
 
+// fonction pour vérifier l'ordre des cartes
+// la verification ne se fait pas dans le bon contenaire
+// mais l'odre est bien vérifier
+$(document).ready(function (){
+    $("#check_cards").click(function (){
 
-	// populate array of indexes
-	for (i = 0; i < count; i++) {
-		shuffled_array.push(i);
+		function check_ordre(){
+			let imagesDeposes = $("#contenaire1 .img");
+			let ordreCorrect = true;
+			
+			imagesDeposes.each(function(index){
+			let ordreAttendu = index + 1;
+			let ordreImage = parseInt($(this).attr('data-ordre'));
+			
+			if (ordreImage !== ordreAttendu) {
+				ordreCorrect = false;
+				return false;
+			}
+		});
+
+		if (ordreCorrect){
+			alert("Bonne réponse !");
+		}
+		else {
+			alert ("Mauvaise réponse !");
+		}
 	}
+	check_ordre();
+	});
+});
 
-	// shuffle indexes
-	for (i = 0; i < count; i++) {
-		index1 = (Math.random() * count) | 0;
-		index2 = (Math.random() * count) | 0;
+// fonction qui permet de rafrachir la page pour repositioner les éléments par défaut
+$(document).ready(function(){
+	$("#reset").click(function() {
+		location.reload();
+	})
+})
 
-		temp_val = shuffled_array[index1];
-		shuffled_array[index1] = shuffled_array[index2];
-		shuffled_array[index2] = temp_val;
-	}
-
-	// apply random order to elements
-	$elements.detach();
-	for (i = 0; i < count; i++) {
-		$parent.append( $elements.eq(shuffled_array[i]) );
-	}
-}
-*/
-
-
+// fonction qui permet de rendre les éléments attrapable et deposable
+$(function(){
+    $(".img").draggable();
+    $(".depot").droppable({
+        accept : ".img",
+        drop: function(event, ui) {
+			ui.draggable.appendTo($(this));
+			ui.draggable.css({top: 0, left :0});
+        }
+    })
+});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,24 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <button ></button>
+    <form action="/formulaire" method="get"> Pokémon
+        <ul>
+            <li>
+                <label for="id">id</label>
+                <input for="text" id="id" name="id">
+            </li>
+            <li>
+                <label for="nom">nom</label>
+                <input type="text" id="nom" name="nom">
+            </li>
+            <li>
+                <label for="type">type</label>
+                <select id="type" name="type"></select>
+            </li>
+            <li>
+                <button id="filtrer" name="filtrer">filtrer</button>
+            </li>
+        </ul>
+    </form>
 </body>
 </html>

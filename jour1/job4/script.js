@@ -2,18 +2,18 @@
 function showMessage(){
     console.log("Test d'une fonction")
 }
-(showMessage())
+(showMessage()) // on appelle la fonction afin que l'action qui lui est désigné se réalise
 
-/* -- fonction avec condition_test avec for -- */
+/* -- fonction avec une condition_test : avec for -- */
 function test_bisextile(){
-    let year;
-    year = "2024";
+    let year; // on initie une variable
+    year = "2024"; // qu'on définit
     /* il faut changer la date manuellement pour pouvoir changer le résultat */
-    if (year % 4 === 0)
+    if (year % 4 === 0) // si (année divisié par 4 est strictement égale à 0)
     /* on utilise 3 égals pour que le zéro soit strictement égal à 0 */
-    console.log("année bisextile");
-    else
-    console.log('non')
+    console.log("année bisextile"); // imprime dans la console : année bisextille
+    else // sinon
+    console.log('pas une année bisextille') //imprime dans la console : pas une année bisextille
 }
 (test_bisextile())
 
@@ -26,5 +26,4 @@ function bisextile(){
     else
     console.log(false)
 }
-
 (bisextile())

@@ -11,7 +11,7 @@ window.addEventListener('keydown', (e) => {
         // on demande d'ajouter dans le textarea les élements récupérer du clavier
         textarea.value += keyPressed;
     }
-    //on définit une variable qui engglobe l'ensemble du document pour le focus
+    //on définit une variable qui englobe l'ensemble du document pour le focus
     let pointer = document.body;
     // on détermine le focus en focntion du mouvement de la souris avec un paramètre event
     pointer.addEventListener('mousemove', function(event) {
@@ -28,14 +28,10 @@ window.addEventListener('keydown', (e) => {
 });
 
 
-
 // --> avant les varaibles et conditions de la souris focus --> le focus se fait uniquement quand je clique sur le textearea
-// quand le textarea est selection avec la souris, les letter s'affiche en double
+// quand le textarea est selection avec la souris, les lettres s'affiche en double
 // quand le textarea n'est pas selection, je ne tape qu'une seule lettre dans le texte area
-
-
-
-
+/* --> le phénomène de double/simple lettre se fait également sans le focus iniatliser */
 
 
 /*  -------- EXPLICATION DE L'EXPRESSION ENTRE CROCHET POUR CHOISIR LES ELEMENTS DE L'ALPHABET

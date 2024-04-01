@@ -1,3 +1,4 @@
+/* --- trie sans fonctions --- */
 
 // trie dans l'ordre ascendant sans fonction
 let nombres = [3,15,56,74,4,2,5,996,48,596];
@@ -12,8 +13,7 @@ let trie1 = [...nombres1].sort(descnedant);
 console.log(trie1)
 
 
-
-/* --- trie avec des fonctions --- */
+/* --- trie avec fonctions --- */
 // ascendant
 function tri(numbers, order){
     numbers = new Array;
@@ -25,7 +25,7 @@ function tri(numbers, order){
 (tri())// me sort un tableau vide a cause de numbers
 
 
-
+// descendant
 function tri2(nbr, order){
     nbr = []; // le paramètre nbr est un tableau vide
     order = (asc=((a,b) => a - b)) || (desc=((b,a) => a - b)); // le paramètre order est la forumul qui permet de trier d'une manière ou d'une autre

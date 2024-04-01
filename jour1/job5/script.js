@@ -3,11 +3,12 @@
 let dailyWeek
 dailyWeek = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
 
-/* -- ici nous allons procéder à différentes impression de la variable - */
+/* -- on procédee à différentes impression de la variable - */
 console.log(dailyWeek) //imprime la liste comme écrite dans la variable + l'index
 console.log(dailyWeek.length) //me dit le nombre sous forme nuémrique d'éléments présent dans la liste
 console.log(dailyWeek.length -1) //le nombre total d'éléments - 1
 
+/* -------------------------------------------------------------------------------- */
 
 /* -- test d'impression sans fonctions -- */
 let jours
@@ -16,6 +17,8 @@ jours = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"
 for (let i = 0; i < jours.length; i++){
     console.log(jours[i])
 }
+
+/* -------------------------------------------------------------------------------- */
 
 /* -- réalisation de la fonction de l'exercice -- */
 function afficherJoursSemaines(){

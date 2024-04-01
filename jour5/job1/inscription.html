@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INSCRIPTION</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="inscription.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h1>JOUR 5</h1>
+      <div class="bouton">
+        <a href="../job1/inscription.html"><button>inscription</button></a>
+        <a href="connexion.html"><button>connexion</button></a>
+      </div>
+    </nav>
+    <form id="form">
+      <h2>INSCRIPTION</h2>
+      <div class="box1et2">
+        <div class="box1">
+          <div class="wrapper">
+            <li class="nom">
+              <label for="nom">nom</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Entrez votre nom"
+              />
+              <div class="error"></div>
+            </li>
+          </div>
+
+          <div class="wrapper">
+            <li class="prénom">
+              <label for="prénom">prénom</label>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                placeholder="Entrez votre prénom"
+              />
+              <div class="error"></div>
+            </li>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="wrapper">
+            <li class="adresse">
+              <label for="adresse">adresse</label>
+              <input
+                type="text"
+                id="adresse"
+                name="adresse"
+                placeholder="Entrez votre adresse"
+              />
+              <div class="error"></div>
+            </li>
+          </div>
+          <div class="wrapper">
+            <li class="codepostal">
+              <label for="codepostal">code postal</label>
+              <input
+                type="text"
+                id="codepostal"
+                name="codepostal"
+                placeholder="Entrez votre code postale"
+              />
+              <div class="error"></div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="box3et4">
+        <div class="box3">
+          <div class="wrapper">
+            <li class="email">
+              <label for="email">email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Entrez votre email"
+              />
+              <div class="error"></div>
+            </li>
+          </div>
+        </div>
+        <div class="box4">
+          <div class="wrapper">
+            <li class="mdp">
+              <label for="mdp">mdp</label>
+              <input
+                type="password"
+                id="mdp"
+                name="mdp"
+                placeholder="Créez un mdp"
+              />
+              <div class="error"></div>
+            </li>
+          </div>
+          <div class="wrapper">
+            <li>
+              <label for="mdp">vérifier mdp</label>
+              <input
+                type="password"
+                id="vmdp"
+                name="vmdp"
+                placeholder="Confirmer mot de passe"
+              />
+              <div class="error"></div>
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <li>
+        <button type="submit" id="submit" name="connect">S'inscrire</button>
+      </li>
+    </form>
+  </body>
+</html>

@@ -15,4 +15,4 @@ function fizzbuzz(){
         }   
     }
 }
-(fizzbuzz()) // on imprime la fonction
+(fizzbuzz()) // on imprime l'action demandé par la fonction

@@ -5,12 +5,13 @@ function NombresPremiers(variable1){
     else if (variable1 > 1)
     console.log("C'est un nombre premier");
 }
-(NombresPremiers(12))
+(NombresPremiers(12)) /* --- ne fonctionne pas dans l'impression de la console, 
+il imprime plusieurs fois --- */
 
 
 
 // fonction qui permet de savoir si un nombre est premier ou pas
-// récupérer sur internet
+// ATTENTION - récupérer sur internet
 function nbrPremier(nbr) {// fonction 
   for(var i = 2; i < nbr; i++)
   //pour la variable i, tant que i est inférieur à nbr, on arrête le compteur

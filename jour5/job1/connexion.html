@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONNEXION</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="connexion.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h1>JOUR 5</h1>
+      <div class="bouton">
+        <a href="../job1/inscription.html"><button>inscription</button></a>
+        <a href="connexion.html"><button>connexion</button></a>
+      </div>
+    </nav>
+    <form id="form">
+      <h2>CONNEXION</h2>
+      <div class="wrapper">
+        <div class="box1">
+          <li>
+            <label for="email">email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Entrez adresse mail"
+            />
+            <div class="error"></div>
+          </li>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="box2">
+          <li>
+            <label for="mdp">mdp</label>
+            <input
+              type="text"
+              id="mdp"
+              name="mdp"
+              placeholder="Entrez votre mot de passe"
+            />
+            <div class="error"></div>
+          </li>
+        </div>
+      </div>
+
+      <li>
+        <button type="submit" id="submit" name="connect">Se connecter</button>
+      </li>
+    </form>
+  </body>
+</html>
