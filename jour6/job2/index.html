@@ -10,6 +10,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script type="module">
+      import { Toast } from "bootstrap.esm.min.js";
+
+      Array.from(document.querySelectorAll(".toast")).forEach(
+        (toastNode) => new Toast(toastNode)
+      );
+    </script>
   </head>
   <body>
     <!-- barre de navigation haut de page -->
@@ -23,7 +30,7 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="#"
+                  href="https://laplateforme.io/"
                   target="_blank"
                   >Acceuil</a
                 >
@@ -201,7 +208,6 @@
         </div>
         <!-- connexion -->
         <div class="container p-5 m-3">
-          
           <form class="row g-3">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
@@ -225,7 +231,7 @@
               />
             </div>
 
-            <div class="ms-3 form-check" >
+            <div class="ms-3 form-check">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -237,11 +243,14 @@
               </label>
             </div>
 
-            <button type="button" class="ms-3 mb-3 btn btn-primary" style="width: 25%">
+            <button
+              type="button"
+              class="ms-3 mb-3 btn btn-primary"
+              style="width: 25%"
+            >
               Submit
             </button>
           </form>
-
         </div>
       </div>
     </div>
