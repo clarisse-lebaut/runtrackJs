@@ -3,15 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tailwind CSS</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@heroicons/vue@1.0.4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">Acceuil</a>
-        <a href="index.html">Inscription</a>
-        <a href="index.html">Connexion</a>
-        <a href="index.html">Rechercher</a>
+    <header class="flex-fluid bg-lime-300">
+      <nav class="sm:flex gap-10 mb-5 p-4 px-12">
+        <div>
+          <a href="index.html">Acceuil</a>
+        </div>
+        <div>
+          <a href="index.html">Inscription</a>
+        </div>
+        <div>
+          <a href="index.html">Connexion</a>
+        </div>
+        <div>
+          <a href="index.html">Rechercher</a>
+        </div>
       </nav>
     </header>
 
@@ -65,13 +79,6 @@
       <button>Valider</button>
     </form>
 
-    <footer>
-      <nav>
-        <a href="index.html">Acceuil</a>
-        <a href="index.html">Inscription</a>
-        <a href="index.html">Connexion</a>
-        <a href="index.html">Rechercher</a>
-      </nav>
-    </footer>
+    <footer></footer>
   </body>
 </html>
