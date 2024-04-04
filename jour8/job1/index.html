@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Acceuil</a>
+        <a href="index.html">Inscription</a>
+        <a href="index.html">Connexion</a>
+        <a href="index.html">Rechercher</a>
+      </nav>
+    </header>
+
+    <form action="#">
+      <div class="radio">
+        <input
+          type="radio"
+          name="civilité"
+          id="civilitéMr"
+          placeholder="civilité"
+          value="monsieur"
+        />
+        <label for="civilitéMr">Monsieur</label>
+        <input
+          type="radio"
+          name="civilité"
+          id="civilitéMme"
+          placeholder="civilité"
+          value="madame"
+        />
+        <label for="civilitéMme">Madame</label>
+        <input
+          type="radio"
+          name="civilité"
+          id="civilitéAutre"
+          placeholder="civilité"
+          value="autre"
+        />
+        <label for="civilitéAutre">Autre</label>
+      </div>
+      <label for="prénom">Prénom</label>
+      <input type="text" name="prénom" placeholder="prénom" />
+      <label for="nom">Nom</label>
+      <input type="text" name="nom" placeholder="nom" />
+      <label for="adresse">Adresse</label>
+      <input type="text" name="adresse" placeholder="adresse" />
+      <label for="email">E-Mail</label>
+      <input type="email" name="email" placeholder="email" />
+      <label for="password">Mot de passe</label>
+      <input type="password" name="password" placeholder="mot de passe" />
+      <div class="checkbox">
+        <input type="checkbox" name="passion1" />
+        <label for="passion1">Informatique</label>
+        <input type="checkbox" name="passion2" />
+        <label for="passion2">Voyages</label>
+        <input type="checkbox" name="passion3" />
+        <label for="passion3">Sport</label>
+        <input type="checkbox" name="passion4" />
+        <label for="passion4">Lecture</label>
+      </div>
+      <button>Valider</button>
+    </form>
+
+    <footer></footer>
+  </body>
+</html>
