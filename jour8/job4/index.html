@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@heroicons/vue@1.0.4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="fixed top-0 w-full bg-lime-300 sm:flex gap-10 mb-5 p-4 px-12">
+        <div>
+          <a
+            href="index.html"
+            class="hover:bg-lime-200 hover:shadow-lg rounded px-5 p-3"
+            >Acceuil</a
+          >
+        </div>
+        <div>
+          <a
+            href="index.html"
+            class="hover:bg-lime-200 hover:shadow-lg rounded px-5 p-3"
+            >Inscription</a
+          >
+        </div>
+        <div>
+          <a
+            href="index.html"
+            class="hover:bg-lime-200 hover:shadow-lg rounded px-5 p-3"
+            >Connexion</a
+          >
+        </div>
+        <div>
+          <a
+            href="index.html"
+            class="hover:bg-lime-200 hover:shadow-lg rounded px-5 p-3"
+            >Rechercher</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="m-16">
+      <form action="#" class="grid justify-center gap-4">
+        <div class="mx-10 bg-slate-200 shadow-lg rounded m-5 p-5">
+          <!-- civilité-->
+          <div class="grid justify-center shadow-lg rounded bg-white p-2 m-6">
+            <h5>CIVILITES</h5>
+          </div>
+          <div class="grid justify-center gap-5 m-5">
+            <div>
+              <input
+                type="radio"
+                name="civilité"
+                id="civilitéMr"
+                placeholder="civilité"
+                value="monsieur"
+              />
+              <label for="civilitéMr">Monsieur</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="civilité"
+                id="civilitéMme"
+                placeholder="civilité"
+                value="madame"
+              />
+              <label for="civilitéMme">Madame</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="civilité"
+                id="civilitéAutre"
+                placeholder="civilité"
+                value="autre"
+              />
+              <label for="civilitéAutre">Autre</label>
+            </div>
+          </div>
+
+          <!-- informations-->
+          <div class="grid justify-center shadow-lg rounded bg-white p-2 m-6">
+            <h5>INFORMATIONS</h5>
+          </div>
+          <div class="grid gap-5 m-5">
+            <div>
+              <i class="fas fa-user"></i>
+              <label for="prénom">Prénom</label>
+            </div>
+            <input
+              type="text"
+              name="prénom"
+              placeholder="prénom"
+              class="focus:border-green-500 focus:ring-lime-500 focus:ring-1 rounded bg-green-200 p-2 border focus:outline-none"
+            />
+
+            <div>
+              <i class="fas fa-user"></i>
+              <label for="nom">Nom</label>
+            </div>
+            <input
+              type="text"
+              name="nom"
+              placeholder="nom"
+              class="focus:border-green-500 focus:ring-lime-500 focus:ring-1 rounded bg-green-200 p-2 border focus:outline-none"
+            />
+            <div>
+              <i class="fas fa-home"></i>
+              <label for="adresse">Adresse</label>
+            </div>
+            <input
+              type="text"
+              name="adresse"
+              placeholder="adresse"
+              class="focus:border-green-500 focus:ring-lime-500 focus:ring-1 rounded bg-green-200 p-2 border focus:outline-none"
+            />
+            <div>
+              <i class="fas fa-at"></i>
+              <label for="email">E-Mail</label>
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="email"
+              class="focus:border-green-500 focus:ring-lime-500 focus:ring-1 rounded bg-green-200 p-2 border focus:outline-none"
+            />
+            <div>
+              <i class="fas fa-key"></i>
+              <label for="password">Mot de passe</label>
+            </div>
+            <input
+              type="password"
+              name="password"
+              placeholder="mot de passe"
+              class="focus:border-green-500 focus:ring-lime-500 focus:ring-1 rounded bg-green-200 p-2 border focus:outline-none"
+            />
+          </div>
+
+          <!-- passions -->
+          <div class="grid justify-center shadow-lg rounded bg-white p-2 m-6">
+            <h5>PASSION ET LOISIRS</h5>
+          </div>
+          <div class="grid grid-cols-4 gap-2">
+            <div class="flex-wrap m-3">
+              <div>
+                <input type="checkbox" name="passion1" />
+                <label for="passion1">Informatique</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion2" />
+                <label for="passion2">Voyages</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion3" />
+                <label for="passion3">Sport</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion4" />
+                <label for="passion4">Lecture</label>
+              </div>
+            </div>
+            <div class="flex-wrap m-3">
+              <div>
+                <input type="checkbox" name="passion1" />
+                <label for="passion1">Cuisine</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion2" />
+                <label for="passion2">Arts martiaux</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion3" />
+                <label for="passion3">Animaux</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion4" />
+                <label for="passion4">Timbres</label>
+              </div>
+            </div>
+            <div class="flex-wrap m-3">
+              <div>
+                <input type="checkbox" name="passion1" />
+                <label for="passion1">Cuisine</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion2" />
+                <label for="passion2">Arts martiaux</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion3" />
+                <label for="passion3">Animaux</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion4" />
+                <label for="passion4">Timbres</label>
+              </div>
+            </div>
+            <div class="flex-wrap m-3">
+              <div>
+                <input type="checkbox" name="passion1" />
+                <label for="passion1">Cuisine</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion2" />
+                <label for="passion2">Arts martiaux</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion3" />
+                <label for="passion3">Animaux</label>
+              </div>
+              <div>
+                <input type="checkbox" name="passion4" />
+                <label for="passion4">Timbres</label>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-center m-5">
+            <button
+              class="rounded-full bg-lime-600 p-3 px-9 hover:bg-lime-700 shadow-lg shadow-lime-800/50"
+            >
+              Valider
+            </button>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="grid bg-lime-300">
+      <div class="grid mx-auto gap-5 p-5 text-center">
+        <div>
+          <a
+            href="index.html"
+            class="hover:bg-lime-200 hover:shadow-lg rounded px-5 p-3"
+            >Acceuil</a
+          >
+        </div>
+        <div>
+          <a
+            href="index.html"
+            class="hover:bg-lime-200 hover:shadow-lg rounded px-5 p-3"
+            >Inscription</a
+          >
+        </div>
+        <div>
+          <a
+            href="index.html"
+            class="hover:bg-lime-200 hover:shadow-lg rounded px-5 p-3"
+            >Connexion</a
+          >
+        </div>
+        <div>
+          <a
+            href="index.html"
+            class="hover:bg-lime-200 hover:shadow-lg rounded px-5 p-3"
+            >Rechercher</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
