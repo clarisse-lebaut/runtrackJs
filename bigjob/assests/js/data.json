@@ -1,0 +1,12 @@
+[
+    { "nom": "DUBOIS", "prenom": "Jean", "email": "jean.dubois@laplateforme.io" },
+    { "nom": "MARTIN", "prenom": "Sophie", "email": "sophie.martin@laplateforme.io" },
+    { "nom": "DUPONT", "prenom": "Pierre", "email": "pierre.dupont@laplateforme.io" },
+    { "nom": "LEFEVRE", "prenom": "Marie", "email": "marie.lefevre@laplateforme.io" },
+    { "nom": "GARICA", "prenom": "Thomas", "email": "thomas.garcia@laplateforme.io" },
+    { "nom": "LEROY", "prenom": "Julie", "email": "julie.leroy@laplateforme.io" },
+    { "nom": "MOREAU", "prenom": "Luc", "email": "luc.moreau@laplateforme.io" },
+    { "nom": "PETIT", "prenom": "Emma", "email": "emma.petit@laplateforme.io" },
+    { "nom": "LOPEZ", "prenom": "Antoine", "email": "antoine.lopez@laplateforme.io" },
+    { "nom": "SANCHEZ", "prenom": "Camille", "email": "camille.sanchez@laplateforme.io" }
+]

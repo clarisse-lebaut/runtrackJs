@@ -1,0 +1,5 @@
+#corpscalendrier td.selected{
+    border-radius: 10px;
+    background-color: yellowgreen;
+    color: #fff;
+}
